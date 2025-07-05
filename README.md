@@ -4,7 +4,7 @@ A modern, responsive portfolio website built with **Blazor WebAssembly** showcas
 
 ## 🚀 Live Demo
 
-**🔗 [Visit Portfolio Website]([https://abhinavparupati.github.io/portfolio-website-vibecoded/])**
+**🔗 [Visit Portfolio Website](https://abhinavparupati.github.io/portfolio-website-vibecoded/)**
 
 *Replace `abhinavparupati` with your GitHub username after deployment*
 
