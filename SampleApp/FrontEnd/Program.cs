@@ -1,16 +1,12 @@
-using FrontEnd.Data;
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 
-builder.Services.AddHttpClient<WeatherForecastClient>(c =>
+// Add weather forecast client
+builder.Services.AddHttpClient<FrontEnd.Data.WeatherForecastClient>(client =>
 {
-    var url = builder.Configuration["WEATHER_URL"] 
-        ?? throw new InvalidOperationException("WEATHER_URL is not set");
-
-    c.BaseAddress = new(url);
+    client.BaseAddress = new Uri("https://localhost:7227/"); // Update with your backend URL
 });
 
 var app = builder.Build();
